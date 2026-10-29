@@ -1,0 +1,45 @@
+{
+  "name": "dsh-copy-file",
+  "version": "0.1.0",
+  "description": "在 DSH 右侧文档预览头部加一个「复制文件」按钮：把正在预览的文件放进 Windows 剪贴板，可直接粘贴到任意文件夹。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "document-preview",
+    "clipboard",
+    "copy-file"
+  ],
+  "author": "doudoudouhuahua",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doudoudouhuahua/dsh-copy-file.git"
+  },
+  "homepage": "https://github.com/doudoudouhuahua/dsh-copy-file#readme",
+  "bugs": {
+    "url": "https://github.com/doudoudouhuahua/dsh-copy-file/issues"
+  },
+  "license": "MIT"
+}

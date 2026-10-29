@@ -1,0 +1,4 @@
+# dsh-copy-file —— 文档预览「复制文件」按钮
+- insert:
+    - id: dsh-copy-file
+      name: dsh-copy-file
